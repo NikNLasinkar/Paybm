@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cookie&family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Open+Sans+Condensed:wght@300&family=Open+Sans:wght@600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* html{
+    overflow: hidden;
+} */
+
+/* :root{
+    --navbar-height: 59px;
+} */
+
+body{
+  background: linear-gradient(to right, #3498db, #2c3e50); 
+}
+
+
+#navbar{
+    position: fixed;
+    display: flex;
+    top: 0px;
+    width: 100%;   
+}
+
+/* #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+} */
+
+#navbar img{
+    margin: 0 175px;
+    height: 79px;
+    width: 224px;
+}
+
+ #navbar ul{
+    font-family: 'Mochiy Pop P One', sans-serif;
+ 	/* flex: 1; */
+ 	display: flex;
+ 	text-align: right;
+    margin-left: 7%;
+ 	/* padding-right: 50px; */
+ }
+
+  #navbar ul li{
+  	display: flex;
+   list-style: none;
+   margin: 10px,30px;
+   padding: 20px;
+ }
+
+ #navbar ul li a{
+    font-size: 25px;
+    color: #fff;
+    padding: 7px 25px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    /* background-color: rgb(53, 67, 99); */
+    
+}
+
+ #navbar ul li a:hover{
+    /* color: rgb(255, 44, 44); */
+    color: gold;
+    font-size: 25px;
+    padding: 6px 29px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+    background-color: rgb(53, 67, 99);
+    /* background-color: rgb(115, 199, 255); */
+    
+    
+}
+   
+#body{
+  background-size: cover;
+  padding: 30px 5px;
+  display: flex;
+  flex-direction: row;
+  padding: 3px 200px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #body::before{
+      content: "";
+      /* background: url('../bg.jpg'); */
+      /* position: absolute;
+      height: 100%;
+      width: 100%;
+      scroll-behavior: unset;
+      top: 0px;
+      background-size: cover;
+      left: 0px; 
+      z-index: -1;
+      opacity: 0.5; */
+  /* } */ 
+
+  #body h1{
+    font-family: 'Open Sans', sans-serif;
+    /* margin-top: 25%; */
+    margin-right: 25%;
+      font-family: 'Cookie', cursive;
+      color: white;
+      text-align: center;
+      margin-bottom: 2%;
+      font-size: 45px;
+      /* font-family: 'Bree Serif', serif; */
+  }
+
+  #body p{
+     margin-right: 25%;
+      margin-top: 12px;
+      color: white;
+      text-align: center;
+      font-size: 13px;
+      font-family: 'Mochiy Pop P One', sans-serif;
+  }
+
+  /* #body img{
+    padding: 10px;
+  } */
+
+.sec1{
+  margin-top: 23%;
+  margin-bottom: 10%;
+  }
+
+  button a{
+    color: white;
+  text-decoration: none;
+  padding: 10; 
+  }
+
+  #body .para2{
+      color: white;
+      text-align: center;
+      font-size: 13px;
+      font-family: 'Mochiy Pop P One', sans-serif;
+  }
+
+.button {
+  /* font-family: 'Heebo', sans-serif; */
+  font-family: 'Mochiy Pop P One', sans-serif;
+	align-items: center;
+  border-radius: 30px;
+  border:none;
+  background-color: #439fc7;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 24px;
+  padding: 25px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 30px 0px;
+  /* border:4px solid white; */
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* .sec2{
+  margin-bottom: 18%;
+} */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+  padding: 9px 10px;
+}
+
+
+ .table{
+  height: 145vh;
+  background-color: Indigo;
+ }
+
+ .table-heading{
+  font-family: 'Open Sans', sans-serif;
+  color: blanchedalmond;
+  background-color: indigo;
+  padding: 25px 20px;
+  font-size: 35px;
+  margin-left: 40%;
+  margin-top: 10%;
+ }
+
+ .table-content{
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: 25px;
+ }
+ 
+table, th, td {
+  margin-left: 25%;
+ color: white;
+ border: 1px solid yellow;
+ padding: 15px;
+ /* margin: 10%; */
+ border-radius: 10px;
+ font-size: 20px;
+}
+
+table,  a{
+  color: crimson;
+  /* text-decoration: none; */
+  padding: 10; 
+}
+
+.transfer-heading{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 40px;
+  font-size: 45px;
+}
+
+#transfer{
+  height: 80vh;
+  margin: 25px 45px;
+  margin-top: 10%;
+}
+
+form{
+  padding: 20px 15px;
+  margin-top: 40px;
+  margin-right: 31%;
+}
+
+form label{
+  font-family: 'Heebo', sans-serif;
+  font-size: 35px;
+    margin-left: 40%;
+}
+
+form input{
+  font-size: 30px;
+  margin-left: 12px;
+  width: 39%;
+}
+/* 
+form select{
+  width: 25%;
+  font-size: 30px;
+  margin-left: 25px;
+} */
+
+form select{
+  padding: 8px;
+  font-size: 25px;
+  margin-left: 44px;
+  width: 39%;
+}
+
+form select #from{
+  margin-left: 6%;
+}
+
+form .to{
+  margin-left: 9%;
+}
+
+.button-transfer{
+  font-family: 'Mochiy Pop P One', sans-serif;
+  align-items: center;
+  border-radius: 30px;
+  border:none;
+  background-color: #439fc7;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.5s;
+  cursor: pointer;
+  background: rgb(13, 51, 77);
+  margin: 30px 0px;
+  margin-left: 65%;
+  font-size: 25px;
+  padding: 10px 0;
+  width: 17%;
+}
+
+ section h2{
+  text-align: center;
+  color :white ;
+  font-size: 30px;
+  /* border: 2px solid yellow; */
+
+ }
+
+ .center{
+  text-align: center;
+}
+
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
